@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohE-LU-68d">
+                    <rect key="frame" x="-2" y="105" width="129" height="20"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Thursday" id="OLK-8n-IFt">
+                        <font key="font" size="12" name="AvenirNext-DemiBold"/>
+                        <color key="textColor" red="0.93858618620000001" green="0.97143219059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pkc-40-kes">
+                    <rect key="frame" x="93" y="4" width="26" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="q3N-If-TJM"/>
+                        <constraint firstAttribute="height" constant="20" id="yF7-mq-huU"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="100" id="A7J-z2-vfL">
+                        <font key="font" size="12" name="AvenirNext-DemiBold"/>
+                        <color key="textColor" red="0.93858618620000001" green="0.97143219059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j0-fj-CoR">
+                    <rect key="frame" x="6" y="4" width="26" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="7is-tE-eLb"/>
+                        <constraint firstAttribute="height" constant="20" id="E49-hp-AVw"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="100" id="b55-tz-b9k">
+                        <font key="font" size="12" name="AvenirNext-DemiBold"/>
+                        <color key="textColor" red="0.93858618620000001" green="0.97143219059999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jd6-Zb-J3P">
+                    <rect key="frame" x="30" y="30" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="1xM-Il-Pdt"/>
+                        <constraint firstAttribute="width" constant="65" id="Bgo-OB-3uD"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Clear" id="nJq-gj-H3E"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pkc-40-kes" secondAttribute="bottom" constant="4" id="AEx-kl-eeP"/>
+                <constraint firstAttribute="trailing" secondItem="ohE-LU-68d" secondAttribute="trailing" id="Evf-Ry-BCZ"/>
+                <constraint firstItem="ohE-LU-68d" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="Mjc-Q5-Zk3"/>
+                <constraint firstItem="7j0-fj-CoR" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="8" id="Qeh-lM-lNv"/>
+                <constraint firstItem="ohE-LU-68d" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="Y2u-DT-rU5"/>
+                <constraint firstAttribute="bottom" secondItem="7j0-fj-CoR" secondAttribute="bottom" constant="4" id="ZqE-LZ-bHk"/>
+                <constraint firstItem="jd6-Zb-J3P" firstAttribute="centerX" secondItem="c22-O7-iKe" secondAttribute="centerX" id="alF-q7-6IV"/>
+                <constraint firstAttribute="trailing" secondItem="Pkc-40-kes" secondAttribute="trailing" constant="8" id="di1-Ui-2I9"/>
+                <constraint firstItem="jd6-Zb-J3P" firstAttribute="centerY" secondItem="c22-O7-iKe" secondAttribute="centerY" id="eO4-8M-BEe"/>
+                <constraint firstItem="ohE-LU-68d" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="oL9-0Y-ygr"/>
+            </constraints>
+        </customView>
+        <collectionViewItem id="q2D-cI-bqo" customClass="WeatherCell" customModule="weathered" customModuleProvider="target">
+            <connections>
+                <outlet property="cellDate" destination="ohE-LU-68d" id="Zy8-BT-MyC"/>
+                <outlet property="highTemperature" destination="7j0-fj-CoR" id="nKC-1m-rMd"/>
+                <outlet property="lowTemperature" destination="Pkc-40-kes" id="WrU-eV-bD0"/>
+                <outlet property="view" destination="c22-O7-iKe" id="ffY-Jf-3kQ"/>
+                <outlet property="weatherCellImage" destination="jd6-Zb-J3P" id="v4b-dt-cai"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+    <resources>
+        <image name="Clear" width="107" height="107"/>
+    </resources>
+</document>
